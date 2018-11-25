@@ -78,7 +78,7 @@
 }
 #parallaxContent{
     background-color: rgb(0,0,0,0.6);
-    height: 27vmax;
+    height: 30vmax;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
