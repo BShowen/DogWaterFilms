@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#parallax{
+    background-attachment: fixed;
+    background-image: url(./Images/Parallax.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.navTop{
+    display: flex;
+    flex-flow :row wrap;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+.navTop a{
+    color: rgb(255,255,255,1);
+    text-decoration: none;
+}
+#headerContainer{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, .6)), url('./Images/MainPageHeaderBG.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 95vh;
+    width: 100vw;
+    align-items: flex-start;
+}
+#headerContainer p{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    color: rgb(255,255,255,1);
+    font-size: 10vmax;
+}
+#parallaxContent{
+    background-color: rgb(0,0,0,0.3);
+    height: 27vmax;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: baseline;
+    align-content: center;
+}
+#parallaxContent p, h1, button{
+    text-align: center;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Raleway', sans-serif;
+    flex: 1 1 auto;
+    flex-basis: 100vw;
+}
+#parallaxContent p{
+    color: #b0b0b0;
+    font-size: 5vmin;
+}
+#parallaxContent h1{
+    font-size: 10vmin;
+    font-weight: 500;
+    font: bold;
+    color: rgb(233, 233, 233);
+    margin-bottom: 29px;
+}
+button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    height: 10vmin;
+    max-width: 20vmax;
+    color: rgb(233, 233, 233);
+    background-color: rgb(0,0,0,0);
+    border: 3px solid rgba(87, 87, 87, 1);
+}
+button:hover{
+    background-color: rgba(87, 87, 87, 1);
+}
+
+
+
+#bodyContainer{
+    background: rgb(255,255,255,1);
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 3px solid blue; */
+    height: 800px;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+.intro{
+    width: 100vmax;
+    text-align: center;
+    padding: 50px;
+}
+.imgContainers{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 10px;
+    flex: 0 1 25vmax;
+}
+#bodyContainer div img{
+    max-height: 220px;
+    max-width: 220px;
+    min-height: 120px;
+    min-width: 120px;
+}
+
+
+#footer{
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 132px;
+}
+#footer nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 30px;
+    justify-content: space-between;
+}
+#footer nav span{
+    flex-basis: 100vw;
+}
