@@ -27,17 +27,9 @@
     font-family: 'Raleway-Extra-Bold';
     src: url('./Fonts/Raleway/Raleway-ExtraBold.ttf');
 }
-#parallax{
-    background-attachment: fixed;
-    background-image: url(./Images/Parallax.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-}
-
 .navTop{
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 3px;
     display: flex;
     flex-flow :row wrap;
     width: 100vw;
@@ -48,11 +40,13 @@
     text-decoration: none;
     font-family: 'Raleway-Light', sans-serif;
     font-size: 5vmin;
+    border: 3px solid rgba(0,0,0,0);
 }
 .navTop a:hover{
-    border: 3px solid rgba(87, 87, 87, 1);
-    background-color: rgba(87, 87, 87, 1);
+    border-bottom-color: #6c3d5b;
+    /* color:#6c3d5b; */
 }
+
 #headerContainer{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, .6)), url('./Images/MainPageHeaderBG.JPG');
     background-position: center;
@@ -70,23 +64,30 @@
     top: 0;
     text-align: center;
     color: rgb(255,255,255,1);
-    font-size: 10vmax;
+    font-size: 17vmin;
     font-family: 'Raleway-Semi-Bold';
 }
+
+#parallax{
+    background-attachment: fixed;
+    background-image: url(./Images/Parallax.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
 #parallaxContent{
-    background-color: rgb(0,0,0,0.3);
+    background-color: rgb(0,0,0,0.6);
     height: 27vmax;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-self: baseline;
     align-content: center;
 }
 #parallaxContent p, h1, button{
     text-align: center;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Raleway-Light', sans-serif;
-    flex: 1 1 auto;
     flex-basis: 100vw;
 }
 #parallaxContent p{
@@ -95,14 +96,11 @@
 }
 #parallaxContent h1{
     font-size: 10vmin;
-    font-weight: 500;
-    font: bold;
     color: rgb(233, 233, 233);
-    margin-bottom: 29px;
+    margin-bottom: 15px;
 }
 button{
     font-family: 'Raleway-Extra-Bold', sans-serif;
-    font-size: 13px;
     height: 10vmin;
     max-width: 20vmax;
     color: rgb(233, 233, 233);
@@ -112,60 +110,87 @@ button{
 button:hover{
     background-color: rgba(87, 87, 87, 1);
 }
+button:active{
+    background-color: rgb(63, 63, 63);
+}
 
 
 
 #bodyContainer{
-    background: rgb(255,255,255,1);
+    background: rgb(236, 236, 236);
     display: flex;
     flex-wrap: wrap;
-    /* border: 3px solid blue; */
-    height: 800px;
-    width: 100vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-#bodyContainer p{
+.bio{
     font-family: 'Raleway-Light', sans-serif;
-}
-.intro{
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 5vmin;
     width: 100vmax;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
+    width: 90vw;
+    margin-top: 60px;
+}
+.imgContainers .heading{
+    font-family: 'Raleway-Semi-Bold', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgba(77, 77, 77, 0.6);
+}
+.imgContainers p{
+    font-family: 'Raleway-light', sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0);
+    -moz-osx-font-smoothing: grayscale;
 }
 .imgContainers{
-    /* border: 1px solid black; */
+    margin-top: 15px;
     text-align: center;
     padding: 10px;
-    flex: 0 1 25vmax;
+    flex: 1 0 25vmin;
+    margin-bottom: 10vmin;
 }
+
 #bodyContainer div img{
-    max-height: 220px;
-    max-width: 220px;
-    min-height: 120px;
-    min-width: 120px;
+    max-width: 95%;
+    min-width: 200px;
+
 }
 
 
 #footer{
-    margin-top: 30px;
-    background-color: #f0f0f0;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(233, 233, 233);
+    background-color: rgb(0,0,0,0.4);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100vw;
-    height: 132px;
+    height: 132px; 
+    margin-bottom: 100px;
 }
-#footer nav{
+.navBottom{
+    padding: 20px;
+    margin-top: 3px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow :row wrap;
     width: 100vw;
-    padding: 30px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-#footer nav a{
-    font-family: 'Raleway-Light', sans-serif;
-    color: rgb(85, 85, 85);
+.navBottom a{
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    font-family: 'Raleway-Regular', sans-serif;
+    font-size: 2.5vmin;
+    border: 3px solid rgba(0,0,0,0);
 }
-#footer nav span, p{
-    flex-basis: 100vw;
+.navBottom a:hover{
+    text-decoration: underline;
 }
+#busInfo{
+    width: 100vw;
+    padding: 5px;
+    font-size: 3vmin;
+    text-align: center;
+}
+
